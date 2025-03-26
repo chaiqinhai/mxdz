@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>产品交货信息表</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        .data-table th,
+        .data-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .data-table th {
+            background-color: #f5f5f5;
+            font-weight: bold;
+        }
+        .table-title {
+            font-size: 18px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        /* 移动端适配 */
+        @media (max-width: 600px) {
+            .data-table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="table-title">产品交货信息表</div>
+    
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>客户料号</th>
+                <th>规格型号</th>
+                <th>生产批次</th>
+                <th>数量</th>
+                <th>交货日期</th>
+                <th>验证结果</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>EP07-002387</td>
+                <td>MNR8040-2R2NC</td>
+                <td>20250218</td>
+                <td>1000PCS</td>
+                <td>20250325</td>
+                <td style="color: #28a745;">OK</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
